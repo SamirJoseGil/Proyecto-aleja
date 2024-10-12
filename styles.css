@@ -1,4 +1,73 @@
-.imagenAlejandra {
+/* Asegura que todo el body cubra el 100% de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la barra de navegación personalizada */
+.custom-navbar {
+    background-color: #82c4c3;
+    height: 70px;
+    width: 100%;
+}
+
+.custom-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-title:hover {
+    text-decoration: none;
+}
+
+.custom-link {
+    margin: 5px;
+}
+
+.custom-container {
+    margin-top: 20px;
+}
+
+.custom-list-item {
+    margin-bottom: 10px;
+}
+
+.custom-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-img {
+    width: 20rem;
     height: 20rem;
-    width: auto;
+}
+.custom-paragraph {
+    margin-bottom: 20px;
+}
+
+main {
+    min-height: calc(100vh - 320px);
+    padding: 20px;
+}
+
+.custom-navbar .nav-link {
+    color: #FFFFFF;
+    white-space: nowrap;
+
+}
+
+
+.custom-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343A40;
+    color: #FFFFFF;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
 }
