@@ -32,7 +32,7 @@ function previousPage() {
 }
 
 function startManual() {
-    window.location.href = 'index.html'; // Cambia 'index.html' por la página de inicio de tu manual
+    window.location.href = 'Welcome.html'; // Cambia 'index.html' por la página de inicio de tu manual
 }
 
 // Cargar la página inicial
