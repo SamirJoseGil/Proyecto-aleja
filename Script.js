@@ -12,6 +12,7 @@ function loadPage(page) {
         .then(response => response.text())
         .then(data => {
             document.getElementById('content').innerHTML = data;
+            document.getElementById('page-number').textContent = currentPageIndex + 1;
         })
         .catch(error => console.error('Error al cargar la página:', error));
 }
@@ -28,6 +29,10 @@ function previousPage() {
         currentPageIndex--;
         loadPage(pages[currentPageIndex]);
     }
+}
+
+function startManual() {
+    window.location.href = 'index.html'; // Cambia 'index.html' por la página de inicio de tu manual
 }
 
 // Cargar la página inicial

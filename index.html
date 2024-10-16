@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script>
+        // Redirigir a Welcome.html cuando se cargue la página
+        window.onload = function() {
+            window.location.href = "/Welcome.html";
+        };
+    </script>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg custom-navbar text-center">
         <div class="container-fluid d-flex justify-content-between">
-            <a class="text-white custom-title" href="javascript:void(0)" onclick="loadPage('./Pages/Pautas.html')">Manual de Ensamble y Desensamble</a>
+            <a class="text-white custom-title" href="/Welcome.html">Manual de Ensamble y Desensamble</a>
             <div class="navbar-collapse d-flex" id="navbarNav">
                 <ul class="navbar-nav ml-auto d-flex">
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)" onclick="loadPage('./Pages/Pautas.html')">Pautas</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)" onclick="loadPage('./Pages/Herramientas.html')">Herramientas</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)" onclick="loadPage('./Pages/Desensamble.html')">Desensamble del PC</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)" onclick="loadPage('./Pages/AntesDelEnsamble.html')">Antes del Ensamble</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)" onclick="loadPage('./Pages/Ensamble.html')">Ensamble del PC</a></li>
+                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
+                            onclick="loadPage('/Pages/Pautas.html')">Pautas</a></li>
+                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
+                            onclick="loadPage('/Pages/Herramientas.html')">Herramientas</a></li>
+                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
+                            onclick="loadPage('/Pages/Desensamble.html')">Desensamble del PC</a></li>
+                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
+                            onclick="loadPage('/Pages/AntesDelEnsamble.html')">Antes del Ensamble</a></li>
+                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
+                            onclick="loadPage('/Pages/Ensamble.html')">Ensamble del PC</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main id="content" class="container-fluid mt-3">
+    <main id="content" class="container-fluid mt-3 custom-main-container">
         <!-- El contenido de las subpáginas se cargará aquí -->
     </main>
 
@@ -33,17 +46,15 @@
     <div class="container text-center custom-buttons">
         <div class="row justify-content-between">
             <button class="btn btn-secondary col-md-1" onclick="previousPage()">Anterior</button>
-            <button class="btn btn-secondary col-md-1" onclick="nextPage()">Siguiente</button>
         </div>
     </div>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center">
         <div class="container">
-            <p>&copy; 2024 Manual de Ensamble y Desensamble de Computadores. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Manual de Ensamble y Desensamble de Computadores.</p>
             <p>
                 <a href="#" class="text-white mx-2">Facebook</a> |
-                <a href="#" class="text-white mx-2">Twitter</a> |
                 <a href="mailto:contacto@manual.com" class="text-white mx-2">Contacto</a>
             </p>
         </div>
@@ -56,4 +67,5 @@
     <!-- JavaScript -->
     <script src="/Script.js"></script>
 </body>
+
 </html>
