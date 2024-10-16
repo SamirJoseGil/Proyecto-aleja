@@ -10,26 +10,32 @@
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg custom-navbar text-center">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="text-white custom-title" href="/index.html">Manual de Ensamble y Desensamble</a>
-            <div class="navbar-collapse d-flex" id="navbarNav">
-                <ul class="navbar-nav ml-auto d-flex">
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
-                            onclick="loadPage('/Pages/Pautas.html')">Pautas</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
-                            onclick="loadPage('/Pages/Herramientas.html')">Herramientas</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
-                            onclick="loadPage('/Pages/Desensamble.html')">Desensamble del PC</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
-                            onclick="loadPage('/Pages/AntesDelEnsamble.html')">Antes del Ensamble</a></li>
-                    <li class="nav-item flex-grow-1 custom-link"><a class="nav-link" href="javascript:void(0)"
-                            onclick="loadPage('/Pages/Ensamble.html')">Ensamble del PC</a></li>
-                </ul>
+    <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg custom-navbar text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white custom-title" href="/index.html">Manual de Ensamble y Desensamble</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item custom-link"><a class="nav-link" href="javascript:void(0)"
+                                onclick="loadPage('/Pages/Pautas.html')">Pautas</a></li>
+                        <li class="nav-item custom-link"><a class="nav-link" href="javascript:void(0)"
+                                onclick="loadPage('/Pages/Herramientas.html')">Herramientas</a></li>
+                        <li class="nav-item custom-link"><a class="nav-link" href="javascript:void(0)"
+                                onclick="loadPage('/Pages/Desensamble.html')">Desensamble del PC</a></li>
+                        <li class="nav-item custom-link"><a class="nav-link" href="javascript:void(0)"
+                                onclick="loadPage('/Pages/AntesDelEnsamble.html')">Antes del Ensamble</a></li>
+                        <li class="nav-item custom-link"><a class="nav-link" href="javascript:void(0)"
+                                onclick="loadPage('/Pages/Ensamble.html')">Ensamble del PC</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main id="content" class="container-fluid mt-3 custom-main-container">
@@ -37,23 +43,23 @@
     </main>
 
     <!-- BOTONES DE NAVEGACIÓN -->
-    <div class="container text-center custom-buttons">
+    <div class="custom-container text-center custom-buttons">
         <div class="row justify-content-between">
-            <button class="btn btn-secondary col-md-1" onclick="previousPage()">Anterior</button>
-            <div class=" align-self-center custom-buttom-container">
-                <span id="page-number">1</span>
+            <button class="btn btn-secondary custom-button" onclick="previousPage()">Anterior</button>
+            <div class="align-self-center custom-buttom-container">
+                <span id="page-number" class="custom-number">1</span>
             </div>
-            <button class="btn btn-secondary col-md-1" onclick="nextPage()">Siguiente</button>
+            <button class="btn btn-secondary custom-button" onclick="nextPage()">Siguiente</button>
         </div>
     </div>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center">
-        <div class="container">
+        <div class="container bg-dark">
             <p>&copy; 2024 Manual de Ensamble y Desensamble de Computadores.</p>
-            <p>
-                <a href="#" class="text-white mx-2">Facebook</a> |
-                <a href="mailto:contacto@manual.com" class="text-white mx-2">Contacto</a>
+            <p class="bg-dark">
+                <a href="https://www.facebook.com/institucioneducativa.jaipera" class="text-white mx-2" target="_blank">Facebook</a> |
+                <a href="https://www.facebook.com/institucioneducativa.jaipera" class="text-white mx-2" target="_blank">Contacto</a>
             </p>
         </div>
     </footer>
