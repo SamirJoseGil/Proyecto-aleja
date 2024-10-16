@@ -20,7 +20,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-  }
+}
+.welcome-container h1, p {
+  background: linear-gradient(to right, #f1feff, #c7fdff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
   
   .animation-container {
     position: absolute;
@@ -39,6 +45,21 @@ body {
     height: 100%;
     border: none;
   }
+
+  .btn-primary {
+    background: linear-gradient(to left, #f1feff, #c7fdff);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: rgb(255, 255, 255);
+}
   
   /* Estilos adicionales para los títulos */
   h1 {
