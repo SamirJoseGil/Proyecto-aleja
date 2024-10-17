@@ -104,9 +104,8 @@ footer {
 /* Estilos para las imagenes */
 
 .custom-img {
-    height: 50%;
-    width: 70%;
-    object-fit: cover;
+    height: 15rem;
+    width: auto;
     margin: 2rem;
 }
 
